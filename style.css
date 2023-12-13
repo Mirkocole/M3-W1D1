@@ -1,0 +1,68 @@
+/* 
+ESERCIZIO 1) Crea un selettore per selezionare l'<h1> nella sezione "hero", ovvero nel jumbotron
+ESERCIZIO 2) Crea un selettore per selezionare tutti i figli dell'elemento navbar
+ESERCIZIO 3) Crea un selettore per selezionare il link "Continua a leggere" del jumbotron
+ESERCIZIO 4) Crea un selettore per selezionare il primo blog post
+ESERCIZIO 5) Crea un selettore per selezionare l'<hr> del primo blog post e colorarlo di rosso
+ESERCIZIO 6) Crea un selettore per selezionare i link pari della navbar
+ESERCIZIO 7) Crea un selettore per selezionare tutti gli <li> della prima "ordered-list" della sidebar ("Archivio")
+ESERCIZIO 8) Crea un selettore per selezionare l'autore del secondo blog post
+ESERCIZIO 9) Crea un selettore per selezionare il secondo <li> della lista del terzo blog post
+ESERCIZIO 10) Crea un selettore per selezionare il link "Torna su" che trovi a fondo pagina nell'angolo in basso a destra
+ESERCIZIO 11) Crea un selettore per selezionare il bottone "Nuovi" che trovi in basso
+ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
+
+*/
+
+div.jumbotron h1{
+    color:aqua
+} 
+
+nav.nav > *{
+    color: rgb(64, 207, 121);
+}
+
+div.jumbotron p.lead > a{
+    color: blueviolet;
+}
+
+.blog-post:first-of-type {
+    border: solid 5px green;
+    padding: 2%;
+}
+
+.blog-post:first-of-type > hr{
+    background-color: red;
+}
+
+
+nav.nav > *:nth-child(even){
+    color: rgb(151, 151, 73);
+}
+
+.blog-sidebar ol.list-unstyled.mb-0 > li {
+    background-color: rgb(242, 236, 227);
+}
+
+.blog-post:nth-of-type(2) p.blog-post-meta > a {
+    text-decoration: line-through;
+}
+
+.blog-post:nth-of-type(3) > ul > li:nth-child(2) {
+    color: aquamarine;
+}
+
+body > a:last-of-type {
+    color: green;
+}
+
+nav.blog-pagination a:last-child{
+    color: green
+}
+
+
+footer a:nth-child(2){
+    text-decoration: line-through;
+    color: violet
+}
+
